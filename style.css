@@ -1,0 +1,321 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+
+.everest {
+  background-image: url(background_everest.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+.everest__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  justify-content: space-between;
+  @media (max-width: 890px) {
+    justify-content: center;
+  }
+}
+.everest__logo {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  cursor: pointer;
+}
+.everest__menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+  .img {
+    background: rgba(252, 252, 252, 0.4);
+    padding: 11px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    a {
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+}
+
+.img {
+  width: 30px;
+}
+.everest__center {
+  display: grid;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 205px;
+  h1 {
+    font-size: 98px;
+    color: white;
+  }
+  .everest__btn {
+    border: 3px solid #3d3c3c;
+    height: 45px;
+    color: #3b1c1c;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#89ffd8",endColorstr="#fc4696",GradientType=1);
+    text-shadow: 0 -1px 0 #196ebb;
+  }
+}
+.everest__title {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.height {
+  padding: 140px 0px;
+}
+.container {
+}
+.height__wrapper {
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+  img {
+    width: 100%;
+  }
+  display: flex;
+  h2 {
+    margin-bottom: 25px;
+  }
+}
+.height__box {
+}
+.height__title {
+}
+.height__text {
+}
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: '';
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.tours {
+  padding: 70px 0px;
+}
+.container {
+}
+.tours__title {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Oswald;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 150px;
+}
+.tours__wrap {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.tours__box1 {
+  background-image: url(beluha.jpg);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: center;
+  pad: 30px;
+  height: 326px;
+  max-width: 370px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 1px 1px 100px 20px rgba(0, 0, 0, 0.9) inset;
+
+  &:hover {
+    background-size: 150%;
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.7) inset;
+  }
+}
+.tours__header {
+  display: flex;
+  gap: 20px;
+  padding: ;
+}
+.tours__logo {
+}
+.tours__text {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.tours__icon {
+  margin-left: auto;
+}
+.tours__beluha {
+}
+.tours__foot {
+  width: 12px;
+  height: 12px;
+}
+.tours__img {
+}
+.tours__box2 {
+  background-image: url(elbrus.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 326px;
+  max-width: 370px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 1px 1px 100px 20px rgba(0, 0, 0, 0.9) inset;
+
+  &:hover {
+    background-size: 150%;
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.7) inset;
+  }
+}
+.tours__elbrus {
+}
+.tours__box3 {
+  background-image: url(kelim.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 326px;
+  max-width: 370px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 1px 1px 100px 20px rgba(0, 0, 0, 0.9) inset;
+
+  &:hover {
+    background-size: 150%;
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.7) inset;
+  }
+}
+.tours__kilim {
+}
+.tours__btn {
+  display: grid;
+  grid-row-start: auto;
+}
